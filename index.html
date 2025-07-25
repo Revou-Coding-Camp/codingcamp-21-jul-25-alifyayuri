@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>To-Do List App</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="todo-app">
+        <h2>To-Do List</h2>
+        <div class="row date-filter-row">
+            <div class="column">
+                <label for="date-box">Date</label>
+                <input type="date" id="date-box">
+            </div>
+            <div class="column">
+                <label for="filter-date">Filter Date</label>
+                <input type="date" id="filter-date" onchange="filterTasks()">
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="text" id="input-box" placeholder="Tulis Disini...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <ul id="list-container">
+            
+        </ul>
+
+    </div>
+</div>
+<script src="../js/script.js"></script>
+
+</body>
+</html>
